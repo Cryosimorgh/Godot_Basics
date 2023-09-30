@@ -1,0 +1,14 @@
+Node
+FogVolume
+StaticBody3D
+CollisionShape3D
+MeshInstance3D
+DirectionalLight3D
+WorldEnvironment
+CharacterBody3D
+RigidBody3D
+Camera3D
+VBoxContainer
+CanvasGroup
+Button
+Panel

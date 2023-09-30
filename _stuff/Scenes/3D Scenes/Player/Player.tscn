@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://tkvtdksolot2"]
+
+[ext_resource type="Script" path="res://_stuff/Codes/PlayerMovement_Base.cs" id="1_srcrq"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c35vg"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_b4ur8"]
+
+[node name="Player Base" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.389059, 0)
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("1_srcrq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+shape = SubResource("CapsuleShape3D_c35vg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+mesh = SubResource("CapsuleMesh_b4ur8")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.892515, 0.451018, 0, -0.451018, 0.892515, 0, 3.02729, 3.92275)
+fov = 62.6164

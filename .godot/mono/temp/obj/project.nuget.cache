@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "mQdgZkAeztGaalxMyD54/EVDXByeEKmCmVpNsUN64UHToDe10l5gZ3u35k/NrwqnQqfM5DxTB/1jRgMsd29gxA==",
+  "success": true,
+  "projectFilePath": "D:\\GitHub\\Godot Projects\\Godot_Basics\\Fresh_Start.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ehsha\\.nuget\\packages\\godot.sourcegenerators\\4.1.1\\godot.sourcegenerators.4.1.1.nupkg.sha512",
+    "C:\\Users\\ehsha\\.nuget\\packages\\godotsharp\\4.1.1\\godotsharp.4.1.1.nupkg.sha512",
+    "C:\\Users\\ehsha\\.nuget\\packages\\godotsharpeditor\\4.1.1\\godotsharpeditor.4.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://b50sdm8pf61s2"]
+
+[ext_resource type="PackedScene" uid="uid://tkvtdksolot2" path="res://_stuff/Scenes/3D Scenes/Player/Player.tscn" id="1_0qu5e"]
+
+[node name="Main_Scene" type="Node3D"]
+
+[node name="Environment" type="Node" parent="."]
+
+[node name="Player" type="Node" parent="."]
+
+[node name="Player Base" parent="Player" instance=ExtResource("1_0qu5e")]
+visible = false
+
+[node name="UI" type="Node" parent="."]
+
+[node name="HUD" type="Node" parent="UI"]
+
+[node name="Menu" type="Node" parent="UI"]
+
+[node name="Transition" type="Node" parent="UI"]

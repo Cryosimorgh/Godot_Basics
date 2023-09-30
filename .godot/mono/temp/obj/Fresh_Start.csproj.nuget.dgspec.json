@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\GitHub\\Godot Projects\\Godot_Basics\\Fresh_Start.csproj": {}
+  },
+  "projects": {
+    "D:\\GitHub\\Godot Projects\\Godot_Basics\\Fresh_Start.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\Godot Projects\\Godot_Basics\\Fresh_Start.csproj",
+        "projectName": "Fresh_Start",
+        "projectPath": "D:\\GitHub\\Godot Projects\\Godot_Basics\\Fresh_Start.csproj",
+        "packagesPath": "C:\\Users\\ehsha\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Godot Projects\\Godot_Basics\\.godot\\mono\\temp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ehsha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Godot.SourceGenerators": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "GodotSharp": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "GodotSharpEditor": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23463.5\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
