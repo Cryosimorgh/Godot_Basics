@@ -1,19 +1,31 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1696111626
+::res://::1696230913
 icon.svg::CompressedTexture2D::2530425534571781261::1695827725::1695827730::1::::<><>::
-Main_Scene.tscn::PackedScene::4544794381885287631::1696111319::0::1::::<><>::uid://tkvtdksolot2::::res://_stuff/Scenes/3D Scenes/Player/Player.tscn
-node_2d.tscn::PackedScene::7366201749534072257::1695841915::0::1::::<><>::res://_stuff/Codes/Test.cs
-::res://Godot_Basics/::1696111518
-::res://_stuff/::1696017845
-::res://_stuff/Codes/::1696111015
-PlayerMovement_Base.cs::CSharpScript::-1::1696111015::0::1::::<><>::
-Test.cs::CSharpScript::-1::1696110910::0::1::::<><>::
-::res://_stuff/HUD_Components/::1696017597
-HUD_Base.tscn::PackedScene::5973951963471469371::1696017597::0::1::::<><>::uid://dc2kwru7mi5dg
-::res://_stuff/HUD_Components/Buttons/::1696002898
-Button 1.tscn::PackedScene::7356025320371913828::1696002898::0::1::::<><>::
-Button 2.tscn::PackedScene::4084665929418697172::1696002881::0::1::::<><>::
-::res://_stuff/Scenes/::1696017851
-::res://_stuff/Scenes/3D Scenes/::1696017855
-::res://_stuff/Scenes/3D Scenes/Player/::1696108178
-Player.tscn::PackedScene::1355540967450591953::1696108178::0::1::::<><>::res://_stuff/Codes/PlayerMovement_Base.cs
+::res://_stuff/::1696178942
+::res://_stuff/Codes/::1696192287
+GameManager.cs::CSharpScript::-1::1696192287::0::1::::<><>::
+::res://_stuff/Codes/Player/::1696230906
+Camera_Controller.cs::CSharpScript::-1::1696230906::0::1::::<><>::
+PlayerMovement_Base.cs::CSharpScript::-1::1696118792::0::1::::<><>::
+::res://_stuff/Codes/SOs/::1696184771
+::res://_stuff/Codes/SOs/Base_Scripts/::1696192552
+GameManagerSettingsSO.tres::Resource/Resource::3693821683807924813::1696187868::0::1::::<><>::res://_stuff/Codes/SOs/Base_Scripts/GmStats.cs
+GmStats.cs::CSharpScript::-1::1696192552::0::1::::GmStats<>Resource<>::
+::res://_stuff/Codes/SOs/Resources_Made/::1696184771
+::res://_stuff/Codes/UI/::1696230907
+InGameMenu_Handler.cs::CSharpScript::-1::1696230906::0::1::::<><>::
+QuitButton.cs::CSharpScript::-1::1696178416::0::1::::<><>::
+Resume_Button.cs::CSharpScript::-1::1696181925::0::1::::<><>::
+::res://_stuff/Scenes/::1696191731
+GameManager.tscn::PackedScene::3952743324713464426::1696191731::0::1::::<><>::res://_stuff/Codes/GameManager.cs
+Static World Components.tscn::PackedScene::7765008448015849032::1696179221::0::1::::<><>::
+::res://_stuff/Scenes/3D Scenes/::1696171992
+::res://_stuff/Scenes/3D Scenes/Environment/::1696179354
+Box_Plane.tscn::PackedScene::4711799285761123999::1696179354::0::1::::<><>::
+::res://_stuff/Scenes/3D Scenes/Levels/::1696230906
+Base_Levl_Template.tscn::PackedScene::4544794381885287631::1696230906::0::1::::<><>::res://_stuff/Codes/GameManager.cs<>uid://3l4oua7vyscr::::res://_stuff/Scenes/3D Scenes/Player/Player.tscn<>uid://qyexu6a6g511::::res://_stuff/Scenes/UI/InGameMenu.tscn<>uid://b8eov7t4hnav4::::res://_stuff/Scenes/3D Scenes/Environment/Box_Plane.tscn<>uid://divos4gh76cv5::::res://_stuff/Scenes/Static World Components.tscn
+::res://_stuff/Scenes/3D Scenes/Player/::1696230907
+Player.tscn::PackedScene::1989782623014423981::1696230907::0::1::::<><>::res://_stuff/Codes/Player/Camera_Controller.cs<>res://_stuff/Codes/Player/PlayerMovement_Base.cs
+::res://_stuff/Scenes/UI/::1696230907
+HUD_Base.tscn::PackedScene::5521822685946305952::1696155497::0::1::::<><>::
+InGameMenu.tscn::PackedScene::1172851603934468838::1696230907::0::1::::<><>::res://_stuff/Codes/UI/InGameMenu_Handler.cs<>res://_stuff/Codes/UI/Resume_Button.cs<>res://_stuff/Codes/UI/QuitButton.cs

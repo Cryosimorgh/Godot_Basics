@@ -1,2 +1,10 @@
-res://_stuff/Codes/PlayerMovement_Base.cs
-res://_stuff/Codes/Test.cs
+res://_stuff/Scenes/3D Scenes/Levels/Base_Levl_Template.tscn
+res://_stuff/Codes/Player/Camera_Controller.cs
+res://_stuff/Codes/UI/InGameMenu_Handler.cs
+res://_stuff/Scenes/3D Scenes/Player/Player.tscn
+res://_stuff/Scenes/UI/InGameMenu.tscn
+res://_stuff/Codes/GameManager.cs
+res://_stuff/Codes/Player/PlayerMovement_Base.cs
+res://_stuff/Codes/SOs/Base_Scripts/GmStats.cs
+res://_stuff/Codes/UI/QuitButton.cs
+res://_stuff/Codes/UI/Resume_Button.cs

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://divos4gh76cv5"]
+
+[sub_resource type="Environment" id="Environment_upgv3"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u4j0o"]
+
+[node name="Static World Components" type="Node"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_upgv3")
+camera_attributes = SubResource("CameraAttributesPractical_u4j0o")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0570413, 0.998372, 0, -0.998372, -0.0570413, 0, 2.92182, 0)

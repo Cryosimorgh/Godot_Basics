@@ -9,13 +9,12 @@ namespace Player
         [Export] float speed = 5.0f;
         [Export] float jumpVelocity = 4.5f;
 
-        float deltaTime = (float)ProjectSettings.GetSetting("physics/common/physics_ticks_per_second");
+        float deltaTime = 1/(float)ProjectSettings.GetSetting("physics/common/physics_ticks_per_second");
         float gravity = (float)ProjectSettings.GetSetting("physics/3d/default_gravity");
-
+        
         Vector3 velocity;
         Vector2 inputDir;
         Vector3 direction;
-        bool isGrounded;
 
         public override void _Ready()
         {
@@ -26,19 +25,32 @@ namespace Player
         public override void _PhysicsProcess(double delta)
         {
             velocity = Velocity;
-            isGrounded = IsOnFloor();
 
-            if (!isGrounded)
-                velocity.Y -= gravity * deltaTime;
-
-            if (IsActionJustPressed("ui_accept") && isGrounded)
-                velocity.Y = jumpVelocity;
+            Gravity_Handler(IsOnFloor());
 
             CheckInput();
 
             Velocity = SetVelocity();
 
             MoveAndSlide();
+        }
+
+        private void Gravity_Handler(bool grounded)
+        {
+            if (!grounded)
+            {
+                velocity.Y -= (IsActionPressed("ui_accept") ? gravity : gravity * 2.5f) * deltaTime;
+
+                velocity.Y -= gravity * deltaTime;
+                return;
+            }
+
+            if (IsActionJustPressed("ui_accept") && grounded)
+            {
+                velocity.Y = jumpVelocity;
+                return;
+            }
+            velocity.Y = -2f;
         }
 
         private void CheckInput()

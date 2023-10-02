@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://b50sdm8pf61s2"]
+
+[ext_resource type="Script" path="res://_stuff/Codes/GameManager.cs" id="1_ayd6s"]
+[ext_resource type="PackedScene" uid="uid://3l4oua7vyscr" path="res://_stuff/Scenes/3D Scenes/Player/Player.tscn" id="1_yixvx"]
+[ext_resource type="PackedScene" uid="uid://qyexu6a6g511" path="res://_stuff/Scenes/UI/InGameMenu.tscn" id="2_ppokj"]
+[ext_resource type="PackedScene" uid="uid://b8eov7t4hnav4" path="res://_stuff/Scenes/3D Scenes/Environment/Box_Plane.tscn" id="3_e54rg"]
+[ext_resource type="PackedScene" uid="uid://divos4gh76cv5" path="res://_stuff/Scenes/Static World Components.tscn" id="3_s8baq"]
+
+[node name="Main_Scene" type="Node3D"]
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_ayd6s")
+
+[node name="Player" type="Node" parent="."]
+
+[node name="Player Base" parent="Player" instance=ExtResource("1_yixvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.99923, 0)
+
+[node name="UI" type="Node" parent="."]
+
+[node name="HUD" type="Node" parent="UI"]
+
+[node name="Menu" type="Node" parent="UI"]
+
+[node name="IGUI_Base" parent="UI/Menu" instance=ExtResource("2_ppokj")]
+
+[node name="Transition" type="Node" parent="UI"]
+
+[node name="Environment" type="Node" parent="."]
+
+[node name="Static World Components" parent="Environment" instance=ExtResource("3_s8baq")]
+
+[node name="Environment" parent="Environment" instance=ExtResource("3_e54rg")]
+transform = Transform3D(0.680465, 0.73278, 0, -0.73278, 0.680465, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Environment2" parent="Environment" instance=ExtResource("3_e54rg")]
+transform = Transform3D(-0.73278, 0.680465, 0, -0.680465, -0.73278, 0, 0, 0, 1, 0, 0, 0)

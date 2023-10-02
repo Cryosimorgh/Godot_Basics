@@ -32,3 +32,4 @@ D:\GitHub\Godot Projects\Godot_Basics\.godot\mono\temp\obj\Debug\refint\Fresh_St
 D:\GitHub\Godot Projects\Godot_Basics\.godot\mono\temp\obj\Debug\Fresh_Start.pdb
 D:\GitHub\Godot Projects\Godot_Basics\.godot\mono\temp\obj\Debug\Fresh_Start.genruntimeconfig.cache
 D:\GitHub\Godot Projects\Godot_Basics\.godot\mono\temp\obj\Debug\ref\Fresh_Start.dll
+D:\GitHub\Godot Projects\Godot_Basics\.godot\mono\temp\obj\Debug\Fresh_Start.sourcelink.json

@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://tkvtdksolot2"]
+[gd_scene load_steps=5 format=3 uid="uid://3l4oua7vyscr"]
 
-[ext_resource type="Script" path="res://_stuff/Codes/PlayerMovement_Base.cs" id="1_srcrq"]
+[ext_resource type="Script" path="res://_stuff/Codes/Player/Camera_Controller.cs" id="1_jbknb"]
+[ext_resource type="Script" path="res://_stuff/Codes/Player/PlayerMovement_Base.cs" id="1_np01t"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c35vg"]
 
@@ -13,7 +14,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.389059, 0)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("1_srcrq")
+floor_stop_on_slope = false
+floor_block_on_wall = false
+floor_max_angle = 1.39626
+script = ExtResource("1_np01t")
+jumpVelocity = 15.0
+
+[node name="Camera_Base" type="Node3D" parent="CharacterBody3D"]
+transform = Transform3D(0.997912, 0, -0.0645846, 0, 1, 0, 0.0645846, 0, 0.997912, 0, -0.389059, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Camera_Base" node_paths=PackedStringArray("player", "camParent")]
+transform = Transform3D(0.999551, 0.029908, -0.00198177, -0.0297431, 0.997878, 0.0579266, 0.00371004, -0.0578416, 0.998319, 0, 3.41635, 3.92275)
+script = ExtResource("1_jbknb")
+player = NodePath("../..")
+camParent = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("CapsuleShape3D_c35vg")
@@ -21,6 +35,4 @@ shape = SubResource("CapsuleShape3D_c35vg")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
 mesh = SubResource("CapsuleMesh_b4ur8")
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 0.892515, 0.451018, 0, -0.451018, 0.892515, 0, 3.02729, 3.92275)
-fov = 62.6164
+[node name="Models Parent" type="Node3D" parent="CharacterBody3D"]

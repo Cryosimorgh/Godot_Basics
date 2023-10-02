@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="GmStats" load_steps=2 format=3 uid="uid://bsvkx6gysihrp"]
+
+[ext_resource type="Script" path="res://_stuff/Codes/SOs/Base_Scripts/GmStats.cs" id="1_2ds0b"]
+
+[resource]
+script = ExtResource("1_2ds0b")
+CameraSensitivityY = 0.001
+CameraSensitivityX = 0.001
+GlobalSpeedMod = 1.0

@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://qyexu6a6g511"]
+
+[ext_resource type="Script" path="res://_stuff/Codes/UI/InGameMenu_Handler.cs" id="1_2hehj"]
+[ext_resource type="Script" path="res://_stuff/Codes/UI/Resume_Button.cs" id="2_an4n8"]
+[ext_resource type="Script" path="res://_stuff/Codes/UI/QuitButton.cs" id="3_5ni3y"]
+
+[node name="IGUI_Base" type="Node"]
+
+[node name="Controller" type="Node" parent="." node_paths=PackedStringArray("controlNode")]
+script = ExtResource("1_2hehj")
+controlNode = NodePath("../GUI")
+
+[node name="GUI" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="GUI"]
+texture_filter = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -208.0
+offset_right = 128.0
+offset_bottom = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="GUI/VBoxContainer"]
+layout_mode = 2
+text = "Resume"
+script = ExtResource("2_an4n8")
+
+[node name="Button2" type="Button" parent="GUI/VBoxContainer"]
+layout_mode = 2
+disabled = true
+text = "
+"
+
+[node name="Button3" type="Button" parent="GUI/VBoxContainer"]
+layout_mode = 2
+text = "Exit
+"
+script = ExtResource("3_5ni3y")
